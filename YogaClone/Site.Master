@@ -1,0 +1,97 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="YogaClone.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - My ASP.NET Application</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&family=Lato:wght@700&display=swap" rel="stylesheet">
+ 
+</head>
+<body>
+    <form style="width:100%" runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+        <nav style=" top:0; width:100%; background:#077054; font-family:lato; padding:0;">
+             <div  style="display:flex;justify-content:center;border:solid 1px red; height:115px; ">
+                        <div style="border:solid 1px red; text-align:center;padding-bottom:30px;">
+                            <a style="color:#99fa99" runat="server" href="~/" > 
+                                <h1 style="font-family: 'Lato', sans-serif;">Belle & Carrie</h1>
+                                <p style="font-family: 'Josefin Slab', serif; color:#b6d8cf; font-size:20px; text-transform:uppercase;">Rehabilitation Yoga</p>
+                            </a>
+                        </div>
+                    </div>
+   
+                    <div  style="display:flex;flex-direction:row;justify-content:center;margin:auto;">
+                        <ul style="display:flex;flex-direction:row;justify-content:space-evenly; width:960px; height:23px; text-decoration:none;list-style-type:none; font-family: 'Lato', sans-serif;font-size: 18px;font-weight:300;padding-top:5px;">
+                            <li><a style="color:#b6d8cf;" runat="server" href="~/">Home</a></li>
+                            <li><a style="color:#b6d8cf;" runat="server" href="~/About">About</a></li>
+                            <li id="ClassesTab" onmouseover="" style="padding-right:10px;" >
+                                <a style="color:#b6d8cf;" runat="server" href="~/Classes">Classes</a>
+
+                                    <asp:BulletedList ID="BulletedList1" style=" list-style-type:none;position:relative;width:0px;color:#99fa99;" runat="server">
+                                    <asp:ListItem Style="position:relative; left:-62px;width:100px;background:#077054;padding-left:6px;">
+                                        Instructors
+                                    </asp:ListItem>
+                                    </asp:BulletedList>
+                            </li>
+                            <li><a style="color:#b6d8cf;" runat="server" href="~/Contact">Contact</a></li>
+                            <li><a style="color:#b6d8cf;" runat="server" href="~/Blog">Blog</a></li>
+                        </ul>
+                    </div>    
+        </nav>
+<!--end nav-->
+
+
+       
+        <div class="container body-content" style="">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+         </div>
+
+<!--footer-->
+            <footer style="background:#077054;padding:10px 0 80px; height: 110px;display:flex;flex-direction:row;justify-content:space-between">
+                <div>
+                    <span style="color: rgb(153, 250, 153); font-family: latoregular; font-size: 26px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(7, 112, 84); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">123 St. City Location, Country | 987654321</span>
+                    <br />
+                    <span style="color: rgb(182, 216, 207); font-family: latoregular; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(7, 112, 84); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">© 2023 by Belle &amp; Carrie Rehabilitation Yoga. All rights reserved.</span>
+                </div>
+                <div>
+                    <a href="#">fb</a>
+                    <a href="#">tw</a>
+                    <a href="#">g+</a>
+                    <a href="#">pnt</a>
+                </div>
+                </footer>
+        
+
+    </form>
+</body>
+</html>

@@ -1,2 +1,17 @@
-﻿body {
+﻿
+.defaultPage {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    background: white;
+    height:1000px;
 }
+
+    .defaultPage h1 {
+        font-family: 'Josefin Slab', serif;
+        color: #b6d8cf;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+

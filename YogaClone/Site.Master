@@ -16,10 +16,11 @@
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link href="Content/Site.css" rel="stylesheet" />
  
 </head>
 <body>
-    <form style="width:100%" runat="server">
+    <form  runat="server">
         <asp:ScriptManager runat="server">
             <Scripts>
                 <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
@@ -39,12 +40,12 @@
                 <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
-        <nav style=" top:0; width:100%; background:#077054; font-family:lato; padding:0;">
-             <div  style="display:flex;justify-content:center;border:solid 1px red; height:115px; ">
-                        <div style="border:solid 1px red; text-align:center;padding-bottom:30px;">
-                            <a style="color:#99fa99" runat="server" href="~/" > 
-                                <h1 style="font-family: 'Lato', sans-serif;">Belle & Carrie</h1>
-                                <p style="font-family: 'Josefin Slab', serif; color:#b6d8cf; font-size:20px; text-transform:uppercase;">Rehabilitation Yoga</p>
+        <nav>
+             <div class="nav-container" >
+                        <div class="header-container" >
+                            <a runat="server" href="~/" > 
+                                <h1 >Belle & Carrie</h1>
+                                <p >Rehabilitation Yoga</p>
                             </a>
                         </div>
                     </div>

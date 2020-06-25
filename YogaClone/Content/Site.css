@@ -1,15 +1,35 @@
-﻿/* Move down content because we have a fixed navbar that is 50px tall */
-body {
-   padding:0;
-   margin:0;
+﻿body {
+    background-color: #077054;
+    font-family: 'Lato', sans-serif;
 }
 
-/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
-.body-content {
-   
+
+/*====Master Nav===*/
+form {
+    width:100%;
 }
 
+.nav-container {
+  height:115px;
+}
+.header-container {
+    /*border: solid 1px red;*/
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+    .header-container a {
+        color:#99fa99
+    }
+
+        .header-container a p {
+            font-family: 'Josefin Slab', serif;
+            color:#b6d8cf; 
+            font-size:18px; 
+            text-transform:uppercase;
+        }
+
+/*===master nav end===*/
 
 
 

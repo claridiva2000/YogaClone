@@ -3,6 +3,10 @@
     font-family: 'Lato', sans-serif;
 }
 
+body a{
+
+}
+
 
 /*====Master Nav===*/
 form {
@@ -12,27 +16,123 @@ form {
 .nav-container {
   height:115px;
 }
+
+.b_and_c_header{
+    font-size:52.5px;
+    font-stretch:wider;
+
+}
 .header-container {
     /*border: solid 1px red;*/
     text-align: center;
     padding-bottom: 30px;
+    margin-top:10px;
+    margin-bottom:20px;
 }
 
     .header-container a {
         color:#99fa99
+
+    }
+    .header-container a:hover {
+        text-decoration: none;
     }
 
         .header-container a p {
             font-family: 'Josefin Slab', serif;
-            color:#b6d8cf; 
-            font-size:18px; 
-            text-transform:uppercase;
+            color: #b6d8cf;
+            font-size: 26.5px;
+            text-transform: uppercase;
+            font-stretch: wider;
         }
 
+.navmenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 960px;
+    height: 23px;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    padding-top: 5px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    color: #b6d8cf;
+}
+    .navmenu li a, a:hover a:focus, a:active {
+        color: #b6d8cf;
+        text-decoration: none;
+    }
+
+        .navmenu li a:hover {
+            color: #D3A3FF;
+            text-decoration: none;
+        }
+ 
+
+.instructor {
+    position: relative;
+    left: -62px;
+    width: 100px;
+    padding-left: 6px;
+    list-style-type: none;
+    position: relative;
+    width: 0px;
+    color: #b6d8cf;
+    padding-left:44px;
+}
+    .instructor li {
+        background: #077054;
+        width:115px;
+        text-align:center;
+    }
+        .instructor li:hover {
+            color: #D3A3FF;
+        }
+footer {
+    font-family: 'Raleway', sans-serif;
+    background: #077054;
+    padding: 10px 0 80px;
+    margin: auto;
+    width: 970px;
+    height: 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.address {
+    color: #99FA99;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.copywrite {
+    color: rgb(182, 216, 207);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 220px;
+}
+
+.socials a {
+    color: #99FA99;
+}
+
+i{
+    font-size:30px;
+}
+
+
 /*===master nav end===*/
-
-
-
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .jumbotron {

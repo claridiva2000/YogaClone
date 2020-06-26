@@ -16,6 +16,9 @@
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e2fb0df691.js" crossorigin="anonymous"></script>
     <link href="Content/Site.css" rel="stylesheet" />
  
 </head>
@@ -44,27 +47,27 @@
              <div class="nav-container" >
                         <div class="header-container" >
                             <a runat="server" href="~/" > 
-                                <h1 >Belle & Carrie</h1>
+                                <h1 class="b_and_c_header" >Belle & Carrie</h1>
                                 <p >Rehabilitation Yoga</p>
                             </a>
                         </div>
                     </div>
    
                     <div  style="display:flex;flex-direction:row;justify-content:center;margin:auto;">
-                        <ul style="display:flex;flex-direction:row;justify-content:space-evenly; width:960px; height:23px; text-decoration:none;list-style-type:none; font-family: 'Lato', sans-serif;font-size: 18px;font-weight:300;padding-top:5px;">
-                            <li><a style="color:#b6d8cf;" runat="server" href="~/">Home</a></li>
-                            <li><a style="color:#b6d8cf;" runat="server" href="~/About">About</a></li>
-                            <li id="ClassesTab" onmouseover="" style="padding-right:10px;" >
-                                <a style="color:#b6d8cf;" runat="server" href="~/Classes">Classes</a>
+                        <ul class="navmenu">
+                            <li><a runat="server" href="~/">Home</a></li>
+                            <li><a runat="server" href="~/About">About</a></li>
+                            <li id="ClassesTab" >
+                                <a runat="server" href="~/Classes">Classes</a>
 
-                                    <asp:BulletedList ID="BulletedList1" style=" list-style-type:none;position:relative;width:0px;color:#99fa99;" runat="server">
-                                    <asp:ListItem Style="position:relative; left:-62px;width:100px;background:#077054;padding-left:6px;">
+                                <asp:BulletedList ID="ClassesDropMenu" runat="server" CssClass="instructor">
+                                    <asp:ListItem >
                                         Instructors
                                     </asp:ListItem>
                                     </asp:BulletedList>
                             </li>
-                            <li><a style="color:#b6d8cf;" runat="server" href="~/Contact">Contact</a></li>
-                            <li><a style="color:#b6d8cf;" runat="server" href="~/Blog">Blog</a></li>
+                            <li><a runat="server" href="~/Contact">Contact</a></li>
+                            <li><a runat="server" href="~/Blog">Blog</a></li>
                         </ul>
                     </div>    
         </nav>
@@ -72,23 +75,23 @@
 
 
        
-        <div class="container body-content" style="">
+        <div  >
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
          </div>
 
 <!--footer-->
-            <footer style="background:#077054;padding:10px 0 80px; height: 110px;display:flex;flex-direction:row;justify-content:space-between">
+            <footer>
                 <div>
-                    <span style="color: rgb(153, 250, 153); font-family: latoregular; font-size: 26px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(7, 112, 84); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">123 St. City Location, Country | 987654321</span>
+                    <span class="address">123 St. City Location, Country | 987654321</span>
                     <br />
-                    <span style="color: rgb(182, 216, 207); font-family: latoregular; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(7, 112, 84); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">© 2023 by Belle &amp; Carrie Rehabilitation Yoga. All rights reserved.</span>
+                    <span class="copywrite">© 2023 by Belle &amp; Carrie Rehabilitation Yoga. All rights reserved.</span>
                 </div>
-                <div>
-                    <a href="#">fb</a>
-                    <a href="#">tw</a>
-                    <a href="#">g+</a>
-                    <a href="#">pnt</a>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
                 </div>
                 </footer>
         

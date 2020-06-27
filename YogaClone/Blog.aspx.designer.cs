@@ -7,13 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace YogaClone
-{
-
-
-    public partial class Blog
-    {
-
+namespace WebApplication3 {
+    
+    
+    public partial class Blog {
+        
         /// <summary>
         /// form1 control.
         /// </summary>

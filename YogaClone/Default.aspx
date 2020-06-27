@@ -6,7 +6,7 @@
   
     <div  class="defaultPage">
        
-        <div class="landingPgContainer" >
+        <div class="pgContainer" >
             <div class="slogan-container">
                 <h2 class="bigYoga">YOGA</h2>
                 <div class="purpleDiv"></div>

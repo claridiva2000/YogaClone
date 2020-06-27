@@ -9,31 +9,30 @@
     --slogan-font: 'Roboto Slab', serif;
 }
 
-.pgContainer{
-    margin-top:25px;
+.pgContainer {
+    margin-top: 25px;
 }
 
-.about-text {
+.classes-text {
     padding: 0 40px;
-
 }
 
-.about {
+.classes {
     font-family: var(--slogan-font);
     color: var(--bg-dark-green);
     font-size: 35px;
 }
 
-.about-headers {
+.classes-headers {
     font-family: var(--subheader-font);
-    font-size:26px;
+    font-size: 26px;
 }
 
-.about-paragraphs {
+.classes-paragraphs {
     line-height: 28px;
-    font-size:14px;
-    font-family:var(--address-font);
-    font-weight:500;
+    font-size: 14px;
+    font-family: var(--address-font);
+    font-weight: 500;
 }
 
 .yogaLady {

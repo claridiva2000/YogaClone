@@ -1,0 +1,61 @@
+﻿:root {
+    --bg-dark-green: #077054;
+    --text-lime-green: #99FA99;
+    --text-silver: #b6d8cf;
+    --lightpurple: #D3A3FF;
+    --slogan-green: #21A51E;
+    --subheader-font: 'Josefin Slab', serif;
+    --address-font: 'Raleway', sans-serif;
+    --slogan-font: 'Roboto Slab', serif;
+}
+
+.pgContainer {
+    margin-top: 25px;
+}
+
+.classes-text {
+    padding: 0 40px;
+}
+
+.instructors {
+    font-family: var(--slogan-font);
+    color: var(--bg-dark-green);
+    font-size: 35px;
+}
+
+.instructors-headers {
+    font-family: var(--subheader-font);
+    font-size: 26px;
+    text-align:center;
+}
+
+.classes-paragraphs {
+    line-height: 28px;
+    font-size: 14px;
+    font-family: var(--address-font);
+    font-weight: 500;
+}
+
+.imgContainer{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    height:300px;
+    border:solid 1px red;
+}
+.teacher-pics {
+    width: 200px;
+    
+}
+
+.teacherImg {
+    margin-top: 30px;
+    margin-right:60px;
+}
+
+.yogaLady {
+    width: 270px;
+    height: 690px;
+    margin-top: 100px;
+    margin-right: 80px;
+}

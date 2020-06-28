@@ -17,8 +17,8 @@
                 <p>TTHS : 10AM to 11AM</p>
                 <br />
 
-                <h3 class="about-headers">Intermediate</h3>
-                <p class="about-paragraphs" >breathing technique - is the 'alternate nostril 
+                <h3 class="classes-headers">Intermediate</h3>
+                <p class="classes-paragraphs" >breathing technique - is the 'alternate nostril 
                     breathing' or 'balanced breathing' - balances the 
                     energy flow in the channels and purifies the energy 
                     channels (nadi) by balancing the flow of breath through 
@@ -27,8 +27,8 @@
                 <p>TTHS : 10AM to 11AM</p>
                 <br />
 
-                <h3 class="about-headers">Advanced</h3>
-                <p class="about-paragraphs">Akarm dhanurasan baddha konasana catuspadapitham 
+                <h3 class="classes-headers">Advanced</h3>
+                <p class="classes-paragraphs">Akarm dhanurasan baddha konasana catuspadapitham 
                     marichyasana ii matsyasana chin lock ashtanga 
                     namaskara dhanurasana energy center in the subtle 
                     body associated in the physical body with the forehead. 

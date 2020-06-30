@@ -54,16 +54,14 @@
                     </div>
    
                     <div  style="display:flex;flex-direction:row;justify-content:center;margin:auto;">
-                        <ul class="navmenu">
+                        <ul class="navmenu" id="ClassTab">
                             <li><a runat="server" href="~/">Home</a></li>
                             <li><a runat="server" href="~/About">About</a></li>
                             <li id="ClassesTab" >
                                 <a runat="server" href="~/Classes">Classes</a>
 
-                                <asp:BulletedList ID="ClassesDropMenu" runat="server" CssClass="instructor">
-                                    <asp:ListItem >
-                                        Instructors
-                                    </asp:ListItem>
+                                <asp:BulletedList ID="ClassesDropMenu" runat="server" DisplayMode="HyperLink" CssClass="instructor" Visible="False">
+                                        <asp:ListItem Text="Instructors" Value="~/Instructors"></asp:ListItem>
                                     </asp:BulletedList>
                             </li>
                             <li><a runat="server" href="~/Contact">Contact</a></li>

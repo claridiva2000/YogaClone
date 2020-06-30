@@ -60,8 +60,11 @@
                             <li id="ClassesTab" >
                                 <a runat="server" href="~/Classes">Classes</a>
 
-                                <asp:BulletedList ID="ClassesDropMenu" runat="server" DisplayMode="HyperLink" CssClass="instructor" Visible="False">
+                                <asp:BulletedList ID="ClassesDropMenu" runat="server" DisplayMode="HyperLink" CssClass="instructor">
                                         <asp:ListItem Text="Instructors" Value="~/Instructors"></asp:ListItem>
+                                     
+                                        <asp:ListItem Text="Calendar" Value="~/Calendar"></asp:ListItem>
+                                     
                                     </asp:BulletedList>
                             </li>
                             <li><a runat="server" href="~/Contact">Contact</a></li>

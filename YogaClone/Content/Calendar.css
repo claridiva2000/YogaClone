@@ -1,0 +1,26 @@
+﻿:root {
+    --bg-dark-green: #077054;
+    --text-lime-green: #99FA99;
+    --text-silver: #b6d8cf;
+    --lightpurple: #D3A3FF;
+    --slogan-green: #21A51E;
+    --subheader-font: 'Josefin Slab', serif;
+    --address-font: 'Raleway', sans-serif;
+    --slogan-font: 'Roboto Slab', serif;
+}
+
+.calendarContainer {
+    margin-top: 25px;
+}
+.Calendar {
+    font-family: var(--slogan-font);
+    color: var(--bg-dark-green);
+    font-size: 35px;
+    margin-left: 30px;
+}
+.yogaLady {
+    width: 270px;
+    height: 690px;
+    margin-top: 100px;
+    margin-right: 80px;
+}

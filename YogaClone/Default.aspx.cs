@@ -11,6 +11,20 @@ namespace YogaClone
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                //Label1.Text = Request.QueryString["ID"];
+                if(Session["pw"] == null)
+                {
+                    Response.Redirect("~/Login");
+                }
+                else
+                {
+                    Welcome.Text = "Welcome, " + Session["user"].ToString();
+                }
+
+                
+            }
 
         }
     }

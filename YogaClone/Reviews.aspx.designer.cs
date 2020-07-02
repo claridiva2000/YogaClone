@@ -11,34 +11,25 @@ namespace YogaClone
 {
 
 
-    public partial class _Default
+    public partial class Reviews
     {
 
         /// <summary>
-        /// Welcome control.
+        /// txtPost control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Welcome;
+        protected global::System.Web.UI.WebControls.TextBox txtPost;
 
         /// <summary>
-        /// Label1 control.
+        /// btnSubmit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
-
-        /// <summary>
-        /// yogaLady control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image yogaLady;
+        protected global::System.Web.UI.WebControls.Button btnSubmit;
     }
 }

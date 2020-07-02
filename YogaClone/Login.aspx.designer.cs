@@ -11,44 +11,53 @@ namespace YogaClone
 {
 
 
-    public partial class Blog
+    public partial class Login
     {
 
         /// <summary>
-        /// lblUsername control.
+        /// LblError control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblUsername;
+        protected global::System.Web.UI.WebControls.Label LblError;
 
         /// <summary>
-        /// TextBox1 control.
+        /// LblUser control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.Label LblUser;
 
         /// <summary>
-        /// lblPw control.
+        /// TxtUser control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPw;
+        protected global::System.Web.UI.WebControls.TextBox TxtUser;
 
         /// <summary>
-        /// txtPassword control.
+        /// LblPw control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPassword;
+        protected global::System.Web.UI.WebControls.Label LblPw;
+
+        /// <summary>
+        /// TxtPw control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TxtPw;
 
         /// <summary>
         /// Button1 control.
@@ -58,5 +67,14 @@ namespace YogaClone
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button1;
+
+        /// <summary>
+        /// yogaLady control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image yogaLady;
     }
 }
